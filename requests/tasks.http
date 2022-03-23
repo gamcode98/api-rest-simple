@@ -1,0 +1,37 @@
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=2&page=2
+
+###
+GET http://localhost:3000/api/tasks/623b573522af22ae3befac12
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+DELETE http://localhost:3000/api/tasks/623b509053764e11260803cf
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Hacer un sitio web en laravel",
+  "description": "Trabajo de universidad",
+  "done": true
+}
+
+###
+PUT http://localhost:3000/api/tasks/623b573522af22ae3befac13
+Content-Type: application/json
+
+{
+  "title": "Hacer un sitio web en wix",
+  "description": "Trabajo de empresa",
+  "done": false
+}
+
+
+
